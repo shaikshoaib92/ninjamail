@@ -1,0 +1,162 @@
+.hero-section{
+  height: 100vh;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 130px;
+  overflow: hidden;
+}
+.mobile-img{
+  display: none;
+}
+.hero-content{
+  margin-right: -200px;
+  z-index: 2;
+}
+.hero-content > h1 {
+  font-family: 'Playfair Display', serif;
+  width: 600px;
+  font-size: 59px;
+}
+.hero-content > p {
+  font-family: 'Raleway', sans-serif;
+  width: 500px;
+  font-size: 19px;
+  line-height: 26px;
+}
+.hero-section > img{
+  display: block;
+  width: 700px;
+  margin-bottom: 60px;
+  box-shadow: 5px 10px 20px #707070;
+  margin-left: -100px;
+}
+.button-wrapper > button{
+  background-color: var(--primary-color);
+  padding: 15px 25px;
+  margin: 25px 10px 10px 0px;
+  font-size: 21px;
+  font-weight: 900;
+  color: white;
+  border: none;
+}
+.button-wrapper > button:last-child{
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px var(--primary-color) solid;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section{
+    padding: 0;
+    height: 600px;
+    margin: 0px -40px;
+    justify-content: space-around;
+  }
+  .hero-content{
+    margin-right:200px;
+    margin-bottom: 50px;
+
+  }
+  .hero-content > h1{
+    font-size: 30px;
+    width: 300px;
+    z-index: 2;
+  }
+  .hero-content > p{
+    font-size: 16px;
+    width: 300px;
+    z-index: 2;
+  }
+  .hero-section > img{
+    width: 450px;
+    position: absolute;
+    right: 20px;
+  }
+  .button-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+  }
+
+  .button-wrapper .button-1{
+  
+    font-size: 13px;
+    padding: 15px 40px;
+  }
+
+  .button-wrapper .button-2{
+    
+    font-size: 13px;
+    padding: 15px 30px;
+  }
+}
+@media  (max-width: 450px){
+  .hero-section{
+    height: 500px;
+    width: 100%;
+    top: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    position: static;
+  }
+  .hero-content > h1{
+    width: 260px;
+    font-size: 36px;
+    z-index: 2;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+  }
+  .hero-content > p{
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    z-index: 2;
+    margin: 15px 5px;
+  }
+  
+  .hero-section > img{
+   display: none;
+   position: absolute;
+   opacity: 0;
+  }
+  .button-wrapper{
+    margin: 0 auto;
+  }
+  .button-wrapper > button {
+    margin: 5px 26px;
+    font-size: 13px;
+    padding: 15px 40px;
+  }
+  button.button-1 {
+    margin-left: 0;
+    margin-right: 50px;
+   
+}
+button.button-2{
+  margin-left: 50px;
+  margin-right: 0;
+}
+  .hero-content > img{
+   display: block;
+   position: static;
+   width: 100%;
+   margin: 0 auto;
+  }
+}

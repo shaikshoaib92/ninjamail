@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700;900&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  --primary-color: #4BA87D;
+  --secondary-color: #CAEAC7;
+}
+.App{
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.video-section{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(172deg, #F7F7F7 75%, #CAEAC7 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.black-slashs{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  opacity: 30%;
+  top: 20px;
+  left: 20px;
+}
+.video-section > img {
+  height: 500px;
+  position: absolute;
+}
+.video-section > h1 {
+  font-size: 60px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+  color: white;
+  z-index: 2;
+}
+.video-section > button{
+  padding: 15px 25px;
+  background-color: white;
+  color: var(--primary-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  border: none ;
+  margin: 50px;
+  z-index: 2;
+}
+
+.third-section{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(170deg, var(--secondary-color) 50%, #ffffff 25%);
+}
+.cards-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.card > img{
+  width: 300px;
+}
+.card > div {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+}
+.card > div > p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card > div > button{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0px;
+  border: none;
+  background: none;
+  color: #4BA87D;
+}
+.card:nth-child(2){
+  margin-top: 80px;
+}
+.cards-info{
+  margin: 0 20px;
+  margin-top: 150px;
+  width: 550px;
+}
+.cards-info > h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+.cards-info > p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 26px;
+}
+.case-card{
+  width: 360px;
+  margin: 0 20px;
+  position: relative;
+}
+.case-card > img{
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+}
+.overlay{
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .1));
+  top: 0;
+  z-index: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.case-study{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 90px 0;
+}
+.overlay > h1{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.overlay > p {
+  color: white;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+
+.testimonial2{
+  font-family: 'Playfair Display';
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+.input{
+  position: absolute;
+width: 30em;
+height: 5em;
+
+left: 25%;
+top: 1100px;
+
+background: #FFFFFF;
+border: 1px solid #9F9F9F;
+border-radius: 5px;
+}
+.btn{
+  position: relative;
+width: 7em;
+height: 2.5em;
+left: 33.5em;
+top: 3em;
+background: #4BA87D;
+font-family: 'Playfair';
+font-size: 25px;
+}
+::placeholder{
+  color: gray;
+  font-size: 1.8em;
+  font-family: 'Playfair';
+}
+
+.brands-heading{
+  font-family: 'Playfair Display';
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+.brands{
+  width: 100%;
+  margin: 100px 0;
+  display: flex;
+  padding: 0 0px;
+  justify-content: space-evenly;
+}
+.brands > img {
+  height: 35px;
+}
+
+.plan{
+  height: 350px;
+  width: 100%;
+  background-color: #4BA87D;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.plan > h1{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+  color: white;
+  text-align: center;
+}
+.plan > button{
+  background-color: white;
+  margin: 30px;
+  border: none;
+  padding: 15px 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: var(--primary-color);
+}
+.footer-bottom{
+  width: 100%;
+  height: 100px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 3px #F7F7F7 solid;
+}
+.footer-bottom > p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.footer-details{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 50px
+}
+.footer-details > div {
+  margin-right: 100px;
+  transform: scale(80%);
+}
+.footer-details > ul > li{
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+
+@media  (max-width: 768px) {
+  .video-section{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-section > img {
+    height: 350px;
+  }
+  .black-slashs{
+    width: 300px;
+    height: 300px;
+  }
+  .video-section > h1 {
+    font-size: 38px;
+  }
+  .video-section > button{
+    padding: 5px 15px;
+    font-size: 13px;
+  }
+  .card > img {
+    width: 200px;
+  }
+  .card > div {
+    width: 200px;
+  }
+  .card > div > p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card > div > button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cards-info > h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .cards-info > p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .case-card{
+    width: 240px;
+    margin: 0 10px;
+  }
+  .case-card > img {
+    height: 140px;
+  }
+  .overlay{
+    height: 140px;
+  }
+  .overlay > h1 {
+    font-size: 20px;
+    font-weight: 200px;
+  }
+  .overlay > p {
+    font-size: 12px;
+  }
+  .brands > img {
+    height: 30px;
+  }
+  .btn{
+    size: 7em;
+    left: 20em;
+    top: 7.5em;
+  }
+  .input{
+    left: 6.2em;
+  }
+}
+
+@media  (max-width: 450px){
+  .video-section{
+    padding: 80px 0px;
+    height: 400px;
+  }
+  .video-section > img{
+    height: 220px;
+  }
+
+  .video-section > h1 {
+    font-size: 22px;
+  }
+  .video-section > button{
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+  .cards-wrapper{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .card > img {
+    width: 300px;
+  }
+  .card > div {
+    width: 300px;
+  }
+  .card > div > p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card > div > button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cards-info{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cards-info > h1 {
+    width: 90%;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+  }
+  .cards-info > p {
+    width: 90%;
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+  .card:nth-child(1){
+    margin: 0;
+    margin-right: 90px; 
+  }
+  .card:nth-child(2){
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 90px; 
+  }
+  .case-study{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+  }
+  .case-card{
+    width: 340px;
+    margin: 0 10px;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .case-card > img {
+    position: static;
+    height: 180px;
+  }
+  .overlay{
+    height: 180px;
+  }
+  .overlay > h1 {
+    font-size: 20px;
+    font-weight: 200px;
+  }
+  .overlay > p {
+    font-size: 12px;
+  }
+  .brands > img {
+    height: 30px;
+  }
+  .brands-heading{
+    margin: 10px auto;
+    margin-top: 200px;
+    font-size: 26px;
+    text-align: center;
+    width: 70%;
+    line-height: 36px;
+  }
+  .brands{
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .brands > img{
+    margin: 20px;
+  }
+  .plan > h1{
+    font-size: 42px;
+  }
+  .plan > button{
+    font-size: 13px;
+  }
+  .footer-bottom{
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 30px 10px;
+  }
+  .footer-bottom > p{
+    margin: 20px 0;
+  }
+  .footer-details{
+    padding: 50px 0;
+  }
+  .footer-details > div {
+    margin-right: 0;
+  }
+  .footer-details > ul > li{
+    font-size: 10px;
+  }
+  .test2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  .testimonial2{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+
+    margin-left: 30px;
+    margin-right: -50px;
+
+    
+  }
+  .input{
+    box-sizing: border-box;
+   width: 223px;
+   height: 40px;
+   border: 1px solid #4BA87D;
+   padding: 5px;
+   margin-top: 740px;
+   size: 40px;
+  }
+  .btn{
+    
+    display: block;
+
+    margin-left: 0px;
+    left: 60px;
+    font-family: sans-serif;
+
+  }
+  button.btn{
+    font-size: 18px;
+    margin-top: 50px;
+    width: 300px;
+  }
+  h1.testimonial2{
+    margin-left: 15px;
+    padding: 5px;
+  }
+
+}

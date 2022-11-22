@@ -1,0 +1,181 @@
+.floating-elements{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    animation: fadeIn 1000ms ease-in-out;
+    z-index: -1;
+  }
+  @keyframes fadeIn {
+    from{
+      transform: scale(250%);
+    }
+    to{
+      transform: scale(100%);
+    }
+  }
+  
+  
+  .floating-elements > div:nth-child(1){
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 220px;
+    transform: rotate(45deg);
+    top: 500px;
+    border-radius: 0px;
+    background: #f4bebf;
+  }
+  
+  .floating-elements > div:nth-child(2){
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 100px;
+    top: 101px;
+    border-radius: 0px;
+    background: #F4F4F4;
+  }
+  .floating-elements > div:nth-child(2){
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 350px;
+    top: 101px;
+    border-radius: 0px;
+    background: #EFE1BC;
+  }
+  .floating-elements > div:nth-child(3){
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 100px;
+    top: 101px;
+    border-radius: 0px;
+    background: #F4F4F4;
+  }
+  .floating-elements > div:nth-child(4){
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 150px;
+    top: 301px;
+    border-radius: 50%;
+    border: 2px #707070 solid;
+  }
+  .floating-elements > div:nth-child(5){
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 700px;
+    top: 500px;
+    border-radius: 50%;
+    border: 2px #707070 solid;
+  }
+  .floating-elements > div:nth-child(6){
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    left: 600px;
+    top: 30px;
+    border-radius: 50%;
+    background-color: #D9F4F2;
+  }
+  .floating-elements > div:nth-child(8){
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 880px;
+    top: 47px;
+    border-radius: 0px;
+    background: #F4F4F4;
+  }
+  .floating-elements > div:nth-child(9){
+
+    position: absolute;
+width: 57.89px;
+height: 57.89px;
+left: 1300px;
+top: 160.64px;
+
+background: #000000;
+transform: rotate(45deg);
+  }
+  
+  .floating-elements > div:nth-child(5){
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 1500px;
+    top: 100px;
+    border-radius: 50%;
+    border: 2px #707070 solid;
+  }
+  .floating-elements2{
+    position: absolute;
+  }
+  .floating-elements2 > div:nth-child(2){
+    position: absolute;
+    width: 41.9px;
+    height: 39.8px;
+    left: 144.02px;
+    top: 166.53px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.06;
+    transform: rotate(45deg);
+  }
+  .floating-elements2 > div:nth-child(3){
+    position: absolute;
+    width: 41.9px;
+    height: 41.9px;
+    left: 350.06px;
+    top: 488.91px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    transform: rotate(45deg);
+  }
+  .floating-elements2 > div:nth-child(4){
+    position: absolute;
+    width: 41.9px;
+    height: 39.8px;
+    border-radius: 50%;
+    left: 90vw;
+    top: 226.53px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    transform: rotate(45deg);
+  }
+  .floating-elements2 > div:nth-child(5){
+    position: absolute;
+    width: 60.81px;
+    height: 60.81px;
+    left: 1223.51px;
+    top: 330.02px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.31;
+    transform: rotate(45deg);
+  }
+  .floating-elements2 > div:nth-child(6){
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1374.31px;
+    top: 70px;
+    background: #F4F4F4;
+    mix-blend-mode: normal;
+    opacity: 0.64;
+  }
+  .floating-elements2 > img{
+    position: absolute;
+    left: 1000px;
+    top: 500px;
+  }
+  @media  (max-width: 450px){
+    .floating-elements{
+      display: none;
+    }
+  }
